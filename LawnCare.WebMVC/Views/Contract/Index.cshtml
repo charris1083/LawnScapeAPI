@@ -1,0 +1,77 @@
+﻿@model IEnumerable<LawnCare.Models.ContractListItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div id="contractBackground">
+
+    <h2>Contracts</h2>
+
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    @if (TempData.ContainsKey("SaveResult"))
+    {
+        <div class="alert alert-success fade in" role="alert">
+            @ViewBag.SaveResult
+            <button type="button" class="close" data-dismiss="alert">
+                <span>&times;</span>
+            </button>
+            @TempData["SaveResult"]
+        </div>
+    }
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ContractId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MowerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClientCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MowerService)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MowerRate)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ContractId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClientName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MowerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ClientCity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MowerService)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MowerRate)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ContractId }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ContractId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ContractId })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

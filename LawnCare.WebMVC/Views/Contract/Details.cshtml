@@ -1,0 +1,90 @@
+﻿@model LawnCare.Models.ContractDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ContractDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ContractId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContractId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClientId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MowerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MowerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MowerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MowerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MowerRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MowerRate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClientCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClientCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MowerService)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MowerService)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.ContractId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

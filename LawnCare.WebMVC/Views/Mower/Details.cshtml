@@ -1,0 +1,58 @@
+﻿@model LawnCare.Models.MowerDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MowerDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MowerId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MowerId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MowerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MowerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MowerCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MowerCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MowerService)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MowerService)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MowerRate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MowerRate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MowerId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

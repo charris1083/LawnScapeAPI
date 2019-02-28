@@ -1,0 +1,38 @@
+﻿#body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    /*background-image: url(https://c.pxhere.com/photos/e3/76/garden_brick_path_nature_gardening_fall_colors_outdoor_plant-1233165.jpg!d);*/
+    color: orange;
+    margin: 0px;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    background-color: darkseagreen
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+#homejumbotron {
+    background: url(https://c.pxhere.com/photos/e3/76/garden_brick_path_nature_gardening_fall_colors_outdoor_plant-1233165.jpg!d) center;
+    color: black;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.4);
+    background-blend-mode: lighten;
+}
+#contractBackground {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Butchart_gardens.JPG/220px-Butchart_gardens.JPG)
+}
