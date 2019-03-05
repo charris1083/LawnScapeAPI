@@ -14,8 +14,7 @@ namespace LawnCare.Models
         public string ClientCity { get; set; }
         public string ClientNeeds { get; set; }
 
-        public virtual Client Client { get; set; }
-        public virtual Mower Mower { get; set; }
+        
 
         public override string ToString()
         {
