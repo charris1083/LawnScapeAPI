@@ -87,11 +87,9 @@ namespace LawnCare.Services
                     ctx
                     .Contracts
                     .Single(e => e.ContractId == model.ContractId && e.OwnerId == _userId);
-                entity.Client.ClientName = model.ClientName;
-                entity.Mower.MowerName = model.MowerName;
-                entity.Client.ClientCity = model.ClientCity;
-                entity.Mower.MowerService = model.MowerService;
-                entity.Mower.MowerRate = model.MowerRate;
+                entity.ContractId = model.ContractId;
+                entity.ClientId = model.ClientId;
+                entity.MowerId = model.MowerId;
 
 
                 return ctx.SaveChanges() == 1;
