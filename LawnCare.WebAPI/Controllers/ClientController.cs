@@ -23,7 +23,7 @@ namespace LawnCare.WebAPI.Controllers
         {
             ClientService clientService = CreateClientService();
             var client = clientService.GetClientById(id);
-            return Ok();
+            return Ok(client);
         }
 
         public IHttpActionResult Post(ClientCreate client)

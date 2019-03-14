@@ -68,9 +68,12 @@ namespace LawnCare.Services
                 return
                     new ContractDetail()
                     {
+                        ContractId = entity.ContractId,
                         ClientId = entity.ClientId,
                         MowerId= entity.MowerId,
+                        ClientName= entity.Client.ClientName,
                         ClientCity = entity.Client.ClientCity,
+                        MowerName = entity.Mower.MowerName,
                         MowerService = entity.Mower.MowerService
                     };
             }

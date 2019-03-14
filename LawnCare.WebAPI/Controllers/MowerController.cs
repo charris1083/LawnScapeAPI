@@ -22,7 +22,7 @@ namespace LawnCare.WebAPI.Controllers
         {
             MowerService mowerService = CreateMowerService();
             var mower = mowerService.GetMowerById(id);
-            return Ok();
+            return Ok(mower);
         }
         public IHttpActionResult Post(MowerCreate mower)
         {
