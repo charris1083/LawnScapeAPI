@@ -22,7 +22,7 @@ namespace LawnCare.WebAPI.Controllers
         {
             ContractService contractService = CreateContractService();
             var contract = contractService.GetContractById(id);
-            return Ok();
+            return Ok(contract);
         }
         public IHttpActionResult Post(ContractCreate contract)
         {
